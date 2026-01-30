@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Reisen Event Kalender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Brigesta';
+            src: local('Brigesta'), local('Brigesta-Regular'), local('Brigesta-Bold');
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        body {
+            font-family: 'Arimo', sans-serif;
+            background-color: transparent; /* Transparent für bessere CMS Integration */
+            margin: 0;
+            padding: 0;
+            color: #545454;
+            overflow: hidden;
+        }
+
+        .font-header {
+            font-family: 'Brigesta', 'Playfair Display', serif;
+            font-weight: 700 !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #9bdbbf;
+            border-radius: 10px;
+        }
+
+        .calendar-grid-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/fit-cal-test/assets/index-D8kRVoqX.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
